@@ -20,9 +20,11 @@ if (!function_exists('AdminLogin_admin')) {
     if (!$settings['api'] || !$settings['apiparams']) {
       return null;
     }
+
     $admingsm = explode(",", $template['admingsm']);
 
     $template['variables'] = str_replace(" ", "", $template['variables']);
+
     $replacefrom = explode(",", $template['variables']);
     $replaceto = array($args['username']);
     $message = str_replace($replacefrom, $replaceto, $template['template']);
