@@ -32,7 +32,11 @@ if (!function_exists('ClientAdd')) {
     //        AND `c`.`fieldid` = '".$settings['wantsmsfield']."'
     //        AND `c`.`value` = 'on'
     //        LIMIT 1";
+    // gkjlgj
     //        $result = mysql_query($userSql);
+
+    // fkjslfsljf
+
     $result = $class->getClientDetailsBy($args['userid']);
     $num_rows = mysql_num_rows($result);
 
