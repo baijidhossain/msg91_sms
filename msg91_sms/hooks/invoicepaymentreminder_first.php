@@ -63,4 +63,3 @@ if (!function_exists('InvoicePaymentReminder_Firstoverdue')) {
 }
 
 return $hook;
-// gkdojgdlkjdlk
