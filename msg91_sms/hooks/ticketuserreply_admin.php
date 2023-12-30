@@ -42,6 +42,3 @@ if (!function_exists('TicketUserReply_admin')) {
 }
 
 return $hook;
-
-
-// dfklsdjfjskfkjshfkj

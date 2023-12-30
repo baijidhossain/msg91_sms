@@ -53,3 +53,5 @@ if (!function_exists('ClientChangePassword')) {
 }
 
 return $hook;
+
+// hsfdkjfkl
