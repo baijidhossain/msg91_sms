@@ -40,7 +40,7 @@ if (!function_exists('InvoicePaymentReminder_Firstoverdue')) {
     //        AND `d`.`value` = 'on'
     //        LIMIT 1
     //    ";
-    //
+    // jkjflkjsfljksd
     //        $result = mysql_query($userSql);
     $result = $class->getClientAndInvoiceDetailsBy($args['invoiceid']);
     $num_rows = mysql_num_rows($result);
