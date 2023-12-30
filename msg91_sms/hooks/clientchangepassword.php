@@ -24,7 +24,16 @@ if (!function_exists('ClientChangePassword')) {
       return null;
     }
 
-
+    //        $userSql = "SELECT `a`.`id`,`a`.`firstname`, `a`.`lastname`, `b`.`value` as `gsmnumber`
+    //        FROM `tblclients` as `a`
+    //        JOIN `tblcustomfieldsvalues` as `b` ON `b`.`relid` = `a`.`id`
+    //        JOIN `tblcustomfieldsvalues` as `c` ON `c`.`relid` = `a`.`id`
+    //        WHERE `a`.`id` = '".$args['userid']."'
+    //        AND `b`.`fieldid` = '".$settings['gsmnumberfield']."'
+    //        AND `c`.`fieldid` = '".$settings['wantsmsfield']."'
+    //        AND `c`.`value` = 'on'
+    //        LIMIT 1";
+    //        $result = mysql_query($userSql);
     $result = $class->getClientDetailsBy($args['userid']);
     $num_rows = mysql_num_rows($result);
     if ($num_rows == 1) {
