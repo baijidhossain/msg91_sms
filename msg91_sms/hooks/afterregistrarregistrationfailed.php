@@ -53,4 +53,4 @@ if (!function_exists('AfterRegistrarRegistrationFailed')) {
 }
 
 return $hook;
-// fsdjoisfisodfuou
+// fffffffffffffffffff
